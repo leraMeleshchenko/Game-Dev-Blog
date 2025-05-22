@@ -6,8 +6,21 @@
         </h2>
     </x-slot>
 
-@if(session('success'))
-{{session('success')}} <br> <br>
+    @if(session('success'))
+<div class="flex justify-end mt-6 pr-4">
+  <div class="flex items-start justify-between max-w-md w-full bg-white rounded-xl shadow-md p-4 border border-gray-200">
+    <div class="flex items-start space-x-3">
+      <svg class="w-6 h-6 text-green-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M5 13l4 4L19 7" />
+      </svg>
+      <div>
+        <p class="font-semibold text-gray-900">Successfully saved!</p>
+        <p class="text-sm text-gray-500">{{ session('success') }}</p>
+      </div>
+    </div>
+  </div>
+</div>
 @endif
 
 <div class="max-w-7xl mx-auto bg-gray-800 rounded-2xl p-10 mt-10">

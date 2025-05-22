@@ -16,7 +16,7 @@ class MessageController extends Controller
     
         Message::create($request->except('_token'));
     
-        return redirect()->back()->with('success', 'Bericht verzonden!');
+        return redirect()->back();
     }
 
     public function message() {

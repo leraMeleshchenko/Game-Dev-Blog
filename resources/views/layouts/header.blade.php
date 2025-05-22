@@ -4,14 +4,16 @@ style="background-image: url('https://img.freepik.com/free-vector/river-night-fo
 
     <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
-        <a href="#" class="-m-1.5 p-1.5">
-          <span class="sr-only">Your Company</span>  </a>
+        <a href="#" class="-m-1.5 p-1.5 text-white">
+        Lichtbr </a>
       </div>
       <div class="flex lg:hidden">
+      <a   href="{{ route('about') }}" class="text-sm/6 font-semibold text-white pr-4">about</a>
       <a  href="{{ route('login') }}" class="text-sm/6 font-semibold text-white pr-4">Log in</a>
       <a   href="{{ route('register') }}" class="text-sm/6 font-semibold text-white">Register</a>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+      <a   href="{{ route('about') }}" class="text-sm/6 font-semibold text-white pr-4">about</a>
         <a  href="{{ route('login') }}" class="text-sm/6 font-semibold text-white pr-4">Log in </a>
         <a   href="{{ route('register') }}" class="text-sm/6 font-semibold text-white">Register</a>
       </div>

@@ -2,10 +2,11 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+// никогда не модет быть два одинаковых метода на один путь.
+Route::get('/about', function () {
+    return view('layouts.about');
+})->name('about');
 
-// Route::get('/', function () { никогда не модет быть два одинаковых метода на один путь.
-//     return view('home');
-// });
 
 Route::get('/', [App\Http\Controllers\PostController::class, 'home'])->name('home');
 
